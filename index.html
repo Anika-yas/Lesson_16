@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_16</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <!-- ========================= header ======================= -->
+    <header class="header">
+    </header>               
+        <!-- =============== main =============== -->
+
+    <main class="main">
+        
+
+        <!-- =============== make an appointment =============== -->
+
+        <div class="appointment">
+            <div class="appointment__container">
+                <div class="appointment__row">
+                    <div class="appointment__box">
+                        <div class="appointment__content">
+                            <h3 class="appointment__title">Make an appointment</h3>
+                            <form class="appointment__form " action="#">
+                                <div class="form">
+                                    <input class="form__name" required type="text" name="user-name" placeholder="Name">
+                                    <input class="form__email" required type="email" name="email" placeholder="Email">
+                                    <input class="form__phone" required type="tel" name="phone" placeholder="Phone number">
+                                    <select class="form__select-service" required name="select-service" id="" >
+                                        <option  value="" selected>Select Service </option>
+                                        <option value="1">Pet Boarding (No Cages)</option>
+                                        <option value="2">Pet Daycare</option>
+                                        <option value="3">Pet Day Spa & Grooming</option>
+                                        <option value="4">Custom Meal Plans</option>
+                                        <option value="5">Pet Training</option>
+                                        <option value="6">Shop Our Store!</option>
+                                    </select>
+                                    <!-- <input class="appointment__name form-style" type="text" name="user-name" placeholder="Select Service"> -->
+                                    <textarea class="form__textarea" name="textarea" placeholder="Tell us about your puppers include his/her name" ></textarea>
+                                </div>
+                                <div class="appointment__button">
+                                    <button class="button" type="submit"> Make an appointment</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="appointment__info">
+                        <div class="appointment__text">Maxime placeat facere possimus omnis </div>
+                        <div class="appointment__number">5,700+</div>
+                        <div class="appointment__subtext">customers served</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===================================== summary ===================================== -->
+        <div class="summary">
+            <div class="summary__container">
+                <div class="summary__box">
+                    <div class="summary__header">
+                        <div class="summary__title">Summary</div>
+                        <div class="summary__subtitle">Estimate Shipping and Tax</div>
+                        <div class="summary__text">Enter your destination to get a shipping estimate.</div>
+                    </div>
+                    <form accept="#" class="summary__form form-summary">
+                        <div class="form-summary__input">
+                            <div class="form-summary__item items-input">
+                                <label class="label" for="country-1">Country</label>
+                                <select class="items-input__select item-input" name="country"  id="country-1">
+                                    <option selected value=""> </option>
+                                    <option value="1" >Australia</option>
+                                    <option value="2" >New Zealand</option>
+                                    <option value="3">Indonesia</option>
+                                </select>
+                            </div>
+                            <div class="form-summary__item items-input">
+                                <label class="label" for="province">State/Province</label>
+                                <input class="items-input__state item-input" type="text" name="state" id="province" >
+                            </div>
+                            <div class="form-summary__item items-input">
+                                <label class="label" for="cod">Zip/Postal Code</label>
+                                <input class="items-input__zip item-input" type="text" name="zip" id="cod">
+                            </div>
+                        </div>
+                        <!-- ======== radio ============ -->
+                        <div class="form-summary__box">
+                            <div class="form-summary__radio radio-summary">
+                                <div class="label" >Standard Rate</div>
+                                <div class=" radio-summary__block">
+                                    <input class="radio-summary__input" type="radio" name="price" id="radio-standart" checked>
+                                    <label class="radio-summary__label" for="radio-standart">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                                </div>
+                            </div>
+                            <div class="form-summary__radio radio-summary">
+                                <label class="label" >Pickup from store</label>
+                                <div class=" radio-summary__block">
+                                    <input class="radio-summary__input" type="radio" name="price" id="radio-pickup">
+                                    <label class="radio-summary__label" for="radio-pickup">1234 Street Adress City Address, 1234 $0.000</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-summary__apply">
+                            <div class="form-summary__subtitle">Apply Discount Code</div>
+                            <div class="form-summary__item items-input">
+                                <label class="label" for="enter">Enter discount code</label>
+                                <input class="items-input__zip item-input" type="text" name="zip" id="enter" placeholder="Enter Discount code">
+                            </div>
+                        </div>
+                        <!-- <div class="form-summary__button"> -->
+                            <button class="form-summary__button type="submit">Apply Discount</button>
+                        <!-- </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================== registered ================================== -->
+        
+        <div class="registered">
+            <div class="registered__container">
+                <div class="registered__box">
+                    <div class="registered__header">
+                        <div class="registered__title">Registered Customers</div>
+                        <div class="registered__subtitle">If you have an account, sign in with your email address.</div>
+                    </div>
+                    <form accept="#" class="registered__form form-registered">
+                        <div class="form-registered__input">
+                            <div class="form-registered__item items-input">
+                                <label class="label label_star" for="e-mail">Email</label>
+                                <input class="items-input__email item-input"  type="email" name="email" id="e-mail" placeholder="Your Name">
+                            </div>
+                            <div class="form-registered__item items-input">
+                                <label class="label label_star" for="pas">Password</label>
+                                <input class="items-input__password item-input" type="password" name="password" id="pas" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="form-registered__buttons">
+                            <button class="form-registered__button" type="submit">Sign In</button>
+                            <button class="form-registered__forgot" type="submit">Forgot Your Password?</button>
+                        </div>
+                    </form>
+            </div>
+            
+        </div>
+
+
+
+       
+    </main>
+        <!-- =============== footer  =============== -->
+        <footer class="footer">
+        
+    </footer>
+</div>  
+</body>
+</html>
