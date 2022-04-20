@@ -130,6 +130,7 @@ body{
 .form__textarea {
     flex: 0 0 100%;
     min-height: 180px;
+    resize: vertical;
 }
 .form__select-service{
     padding: 17px 21px 15px 23.58px;
