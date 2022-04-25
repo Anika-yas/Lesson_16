@@ -131,6 +131,7 @@ body{
 .form__textarea {
     flex: 0 0 100%;
     min-height: 180px;
+    max-height: 250px;
     resize: vertical;
 }
 .form__select-service{
@@ -259,6 +260,7 @@ body{
     font-weight: 600;
     font-size: 13px;
     line-height: 2.1;
+    cursor: pointer;
 }
 .item-input {
     min-height: 50px;
@@ -422,7 +424,7 @@ body{
 .label_star::after {
     content: "*";
     top: 0;
-    right: ;
+    right: 0;
     color: #C94D3F;
     transform: translate(4px, 0);
 }

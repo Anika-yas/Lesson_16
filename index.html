@@ -30,7 +30,7 @@
                                     <input class="form__name" required type="text" name="user-name" placeholder="Name">
                                     <input class="form__email" required type="email" name="email" placeholder="Email">
                                     <input class="form__phone" required type="tel" name="phone" placeholder="Phone number">
-                                    <select class="form__select-service" required name="select-service" id="" >
+                                    <select class="form__select-service" required name="select-service">
                                         <option  value="" selected>Select Service </option>
                                         <option value="1">Pet Boarding (No Cages)</option>
                                         <option value="2">Pet Daycare</option>
@@ -65,12 +65,11 @@
                         <div class="summary__subtitle">Estimate Shipping and Tax</div>
                         <div class="summary__text">Enter your destination to get a shipping estimate.</div>
                     </div>
-                    <form accept="#" class="summary__form form-summary">
+                    <form action="#" class="summary__form form-summary">
                         <div class="form-summary__input">
                             <div class="form-summary__item items-input">
                                 <label class="label" for="country-1">Country</label>
                                 <select class="items-input__select item-input" name="country"  id="country-1">
-                                    <option selected value=""> </option>
                                     <option value="1" >Australia</option>
                                     <option value="2" >New Zealand</option>
                                     <option value="3">Indonesia</option>
@@ -88,14 +87,14 @@
                         <!-- ======== radio ============ -->
                         <div class="form-summary__box">
                             <div class="form-summary__radio radio-summary">
-                                <div class="label" >Standard Rate</div>
+                                <label class="label " for="radio-standart">Standard Rate</label>
                                 <div class=" radio-summary__block">
                                     <input class="radio-summary__input" type="radio" name="price" id="radio-standart" checked>
                                     <label class="radio-summary__label" for="radio-standart">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
                                 </div>
                             </div>
                             <div class="form-summary__radio radio-summary">
-                                <label class="label" >Pickup from store</label>
+                                <label class="label" for="radio-pickup">Pickup from store</label>
                                 <div class=" radio-summary__block">
                                     <input class="radio-summary__input" type="radio" name="price" id="radio-pickup">
                                     <label class="radio-summary__label" for="radio-pickup">1234 Street Adress City Address, 1234 $0.000</label>
@@ -110,7 +109,7 @@
                             </div>
                         </div>
                         <!-- <div class="form-summary__button"> -->
-                            <button class="form-summary__button type="submit">Apply Discount</button>
+                            <button class="form-summary__button" type="submit">Apply Discount</button>
                         <!-- </div> -->
                     </form>
                 </div>
@@ -126,29 +125,25 @@
                         <div class="registered__title">Registered Customers</div>
                         <div class="registered__subtitle">If you have an account, sign in with your email address.</div>
                     </div>
-                    <form accept="#" class="registered__form form-registered">
+                    <form action="#" class="registered__form form-registered">
                         <div class="form-registered__input">
                             <div class="form-registered__item items-input">
                                 <label class="label label_star" for="e-mail">Email</label>
-                                <input class="items-input__email item-input"  type="email" name="email" id="e-mail" placeholder="Your Name">
+                                <input class="items-input__email item-input" required type="email" name="email" id="e-mail" placeholder="Your Email">
                             </div>
                             <div class="form-registered__item items-input">
                                 <label class="label label_star" for="pas">Password</label>
-                                <input class="items-input__password item-input" type="password" name="password" id="pas" placeholder="Your Name">
+                                <input class="items-input__password item-input" required type="password" name="password" id="pas" placeholder="Your Password">
                             </div>
                         </div>
                         <div class="form-registered__buttons">
                             <button class="form-registered__button" type="submit">Sign In</button>
-                            <button class="form-registered__forgot" type="submit">Forgot Your Password?</button>
+                            <button class="form-registered__forgot" type="button">Forgot Your Password?</button>
                         </div>
                     </form>
+                </div>
             </div>
-            
         </div>
-
-
-
-       
     </main>
         <!-- =============== footer  =============== -->
         <footer class="footer">
